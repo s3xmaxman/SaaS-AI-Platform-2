@@ -44,25 +44,25 @@ export const navLinks = [
   export const plans = [
     {
       _id: 1,
-      name: "無料",
+      name: "フリープラン",
       icon: "/assets/icons/free-plan.svg",
       price: 0,
       credits: 20,
       inclusions: [
         {
-          label: "20 Free Credits",
+          label: "無料の２０クレジット",
           isIncluded: true,
         },
         {
-          label: "Basic Access to Services",
+          label: "サービスへの基本的なアクセス",
           isIncluded: true,
         },
         {
-          label: "Priority Customer Support",
+          label: "優先的なサポート",
           isIncluded: false,
         },
         {
-          label: "Priority Updates",
+          label: "優先的なアップデート",
           isIncluded: false,
         },
       ],
@@ -75,19 +75,19 @@ export const navLinks = [
       credits: 120,
       inclusions: [
         {
-          label: "120 Credits",
+          label: "120 クレジット",
           isIncluded: true,
         },
         {
-          label: "Full Access to Services",
+          label: "サービスへの完全アクセス",
           isIncluded: true,
         },
         {
-          label: "Priority Customer Support",
+          label: "優先的カスタマーサポート",
           isIncluded: true,
         },
         {
-          label: "Priority Updates",
+          label: "優先的なアップデート",
           isIncluded: false,
         },
       ],
@@ -100,19 +100,19 @@ export const navLinks = [
       credits: 2000,
       inclusions: [
         {
-          label: "2000 Credits",
+          label: "2,000 クレジット",
           isIncluded: true,
         },
         {
-          label: "Full Access to Services",
+          label: "完全なサービスへのアクセス",
           isIncluded: true,
         },
         {
-          label: "Priority Customer Support",
+          label: "優先的なカスタマーサポート",
           isIncluded: true,
         },
         {
-          label: "Priority Updates",
+          label: "優先的なアップデート",
           isIncluded: true,
         },
       ],
