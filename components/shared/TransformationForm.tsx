@@ -28,6 +28,7 @@ import { useState, useTransition } from "react"
 import { AspectRatioKey, debounce, deepMergeObjects } from "@/lib/utils"
 import MediaUploader from "./MediaUploader"
 import TransformedImage from "./Transformedimage"
+import { updateCredits } from "@/lib/actions/user.actions"
 
 
 export const formSchema = z.object({
@@ -111,7 +112,7 @@ const TransformationForm = ({action, data = null, type, creditBalance, userId, c
         setNewTransformation(null)
 
         startTransition(async () => {
-            
+            await updateCredits(userId, creditBalance)
         })
     }
 
