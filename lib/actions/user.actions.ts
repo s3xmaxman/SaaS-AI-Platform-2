@@ -76,7 +76,7 @@ export async function deleteUser(clerkId: string) {
 // USE CREDITS
 export async function updateCredits(userId: string, creditFee: number) {
   try {
-     console.log(`Updating credits for user ID: ${userId}, credit fee: ${creditFee}`);
+    
      await connectToDatabase();
  
      const updatedUserCredits = await User.findOneAndUpdate(
@@ -87,7 +87,6 @@ export async function updateCredits(userId: string, creditFee: number) {
  
      if(!updatedUserCredits) throw new Error("User credits update failed");
  
-     console.log(`Updated user credits: ${JSON.stringify(updatedUserCredits)}`);
      return JSON.parse(JSON.stringify(updatedUserCredits));
   } catch (error) {
      console.error(`Error updating user credits: ${error}`);
