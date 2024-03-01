@@ -6,7 +6,17 @@ import { PlaceholderValue } from 'next/dist/shared/lib/get-img-props'
 import Image from 'next/image'
 import React from 'react'
 
-const TransformedImage = ({ image, type, title, transformationConfig, isTransforming, setIsTransforming, hasDownload = false }: TransformedImageProps) => {
+const TransformedImage = ({ 
+  image, 
+  type, 
+  title, 
+  transformationConfig, 
+  isTransforming, 
+  setIsTransforming, 
+  hasDownload = false 
+}: 
+  TransformedImageProps
+) => {
   const downloadHandler = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
     e.preventDefault();
 
@@ -17,6 +27,8 @@ const TransformedImage = ({ image, type, title, transformationConfig, isTransfor
       ...transformationConfig
     }), title)
   }
+  
+  console.log("test")
 
   return (
     <div className="flex flex-col gap-4">
